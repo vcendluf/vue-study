@@ -18,6 +18,7 @@
     "@fortawesome/fontawesome-free-solid": "^5.0.10",
     "@fortawesome/vue-fontawesome": "0.0.22",
     "element-ui": "^2.3.6",
+    "random-js": "^1.0.8",
     "vue": "^2.5.2",
     "vue-router": "^3.0.1"
   },

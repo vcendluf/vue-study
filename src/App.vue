@@ -22,7 +22,8 @@
           <span>一些工具~</span>
         </template>
         <el-menu-item-group>
-          <el-menu-item index="1-1"><router-link to="/randomPass">随机密码</router-link></el-menu-item>
+          <!-- <el-menu-item index="1-1"><router-link to="/randomPass">随机密码</router-link></el-menu-item> -->
+          <el-menu-item index="1-1" @click="randomPassRoute">随机密码</el-menu-item>
           <el-menu-item index="1-2">选项2</el-menu-item>
         </el-menu-item-group>
       </el-submenu>
@@ -63,8 +64,9 @@ export default{
     handleSelect (key, keyPath) {
       console.log(key, keyPath)
     },
-    randomPass () {
-      console.log('test')
+    randomPassRoute () {
+      // console.log('test')
+      this.$router.push('RandomPass')
     }
   }
 }
